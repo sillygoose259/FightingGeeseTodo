@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="To Do List W/ Bacon"
+        android:text="Fighting Geese: To Do List"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -24,20 +24,17 @@
         android:layout_height="wrap_content"
         android:text="Edit"
         android:id="@+id/button"
-        android:layout_marginRight="40dp"
-        android:layout_below="@+id/textClock"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="23dp" />
+        android:layout_marginTop="82dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/digitalClock"
+        android:layout_centerHorizontal="true" />
 
-    <TextClock
+    <DigitalClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:id="@+id/digitalClock"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignStart="@+id/textView" />
 
 </RelativeLayout>
