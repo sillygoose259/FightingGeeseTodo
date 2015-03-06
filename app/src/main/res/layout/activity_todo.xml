@@ -22,7 +22,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:text="@string/pick_time"
+        android::OnClick="showTimePickerDialog"
         android:id="@+id/button"
         android:layout_marginTop="82dp"
         android:layout_toEndOf="@+id/textView"

@@ -1,6 +1,7 @@
 package android.fightinggeese.todo;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -32,6 +33,11 @@ public class TodoActivity extends Activity {
         });
 
       }
+
+    public void showTimePickerDialog(View v){
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "timePicker");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
