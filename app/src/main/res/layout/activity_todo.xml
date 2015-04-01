@@ -6,38 +6,58 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".TodoActivity">
+    tools:context=".TodoActivity"
+    android:background="#67A3B5">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="To Do List W/ Bacon"
+        android:text="Fighting Geese: To Do List"
+        android:textColor="#ffffff"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="29dp" />
+        android:layout_alignParentStart="true" />
 
-    <Button
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_marginTop="31dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Time Picker"-->
+        <!--android:onClick="showTimePickerDialog"-->
+        <!--android:layout_below="@+id/button2"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Date Picker"-->
+        <!--android:onClick="showDatePickerDialog"-->
+        <!--android:layout_alignTop="@+id/button"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <DigitalClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
-        android:id="@+id/button"
-        android:layout_marginRight="40dp"
-        android:layout_below="@+id/textClock"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="23dp" />
-
-    <TextClock
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textClock"
+        android:id="@+id/digitalClock"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
