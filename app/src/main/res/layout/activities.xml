@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".TodoActivity"
+    android:background="#4FD658">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fighting Geese: To Do List Page 2"
+        android:textColor="#D64FCD"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<Button-->
+    <!--android:id="@+id/button"-->
+    <!--android:layout_marginTop="31dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Time Picker"-->
+    <!--android:onClick="showTimePickerDialog"-->
+    <!--android:layout_below="@+id/button2"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:id="@+id/button1"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Date Picker"-->
+    <!--android:onClick="showDatePickerDialog"-->
+    <!--android:layout_alignTop="@+id/button"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:textColor="#D64FCD"
+        android:layout_height="wrap_content"
+        android:id="@+id/digitalClock"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+
+        android:textColor="#D64FCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,7 +1,6 @@
 package android.fightinggeese.todo;
 
 import android.app.Activity;
-// import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class TodoActivity extends Activity {
+public class activities extends Activity{
 
     protected Button button;
     protected Button button1;
@@ -19,14 +18,14 @@ public class TodoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo);
+        setContentView(R.layout.activities);
 
         button2=(Button)findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 {
-                    Intent intent = new Intent(TodoActivity.this, activities.class);
+                    Intent intent = new Intent(activities.this, TodoActivity.class);
                     startActivity(intent);
                     Toast toast = Toast.makeText(getApplicationContext(), "Button Clicked", Toast.LENGTH_SHORT);
                     toast.show();
@@ -35,20 +34,7 @@ public class TodoActivity extends Activity {
             }
         });
 
-
-             }
-
-//    public void showTimePickerDialog(View v){
-//        DialogFragment newFragment = new TimePickerFragment();
-//        newFragment.show(getFragmentManager(), "timePicker");
-//    }
-
-//    public void showDatePickerDialog(View v) {
-//        DialogFragment newFragment = new DatePickerFragment();
-//        newFragment.show(getFragmentManager(), "datePicker");
-//    }
-
-
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -68,7 +54,4 @@ public class TodoActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-    }
-
+}
